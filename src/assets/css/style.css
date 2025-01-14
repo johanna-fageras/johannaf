@@ -331,9 +331,9 @@ a {
 
 /* Post styles */
 .post {
-  max-width: 850px; /* Increased from 800px */
+  max-width: 750px;
   margin: 0 auto;
-  padding: 3rem 0 2rem 0;
+  padding: 2rem 0;
 }
 
 .post-header {
@@ -352,11 +352,10 @@ a {
 
 .post-header h2 {
   font-family: var(--font-headings);
-  font-size: 1.55rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  color: #3e5974;
+  color: #666;
   margin-bottom: 2rem;
-  letter-spacing: -0.5px;
 }
 
 .featured-image {
@@ -366,24 +365,23 @@ a {
 .featured-image img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 30px;
 }
 
 .post-meta {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  color: #3e5974;
+  color: #666;
   font-family: var(--font-headings);
   font-size: 0.9rem;
-  font-weight: 500;
 }
 
 .lead {
   font-size: 1.25rem;
   line-height: 1.6;
   margin-bottom: 2rem;
-  color: #3e5974;
+  color: #444;
 }
 
 .lead p {
@@ -401,9 +399,16 @@ a {
 }
 
 .post-body {
-  column-count: 2;
-  column-gap: 4rem; /* Increased from 3rem to better suit wider container */
   margin-bottom: 3rem;
+}
+
+.post-body h3 {
+  font-family: var(--font-headings);
+  font-size: 1.65rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1rem;
+  color: var(--color-primary);
+  letter-spacing: -1px;
 }
 
 .post-body h4 {
@@ -411,22 +416,13 @@ a {
   font-size: 1.25rem;
   font-weight: 500;
   margin: 2rem 0 1rem;
-  break-after: avoid-column;
-  letter-spacing: -1px;
-}
-
-h3 {
-  letter-spacing: -1px;
-  font-size: 1.4rem;
+  color: var(--color-text);
 }
 
 .post-body p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: justify;
-}
-
-.post-body p:first-of-type {
-  margin-top: 0;
+  line-height: 1.7;
 }
 
 .post-footer {
@@ -442,21 +438,21 @@ h3 {
 }
 
 .author-image {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 
 .author-name {
   font-family: var(--font-headings);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.1rem;
   display: block;
   margin-bottom: 0.5rem;
 }
 
 .author-description {
-  color: #3e5974;
+  color: #666;
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -469,10 +465,6 @@ h3 {
   .post-meta {
     flex-direction: column;
     gap: 0.5rem;
-  }
-
-  .post-body {
-    column-count: 1;
   }
 
   .author {
@@ -715,6 +707,28 @@ h3 {
   font-weight: 800;
   margin-bottom: 1rem;
   letter-spacing: -2px;
+}
+
+.post-body ol {
+  list-style: none;
+  counter-reset: custom-counter;
+  padding-left: 2rem; /* Add padding to push content right */
+}
+
+.post-body ol li {
+  counter-increment: custom-counter;
+  position: relative;
+  padding-left: 0.5rem; /* Optional: adds a bit more space after the number */
+}
+
+.post-body ol li::before {
+  content: counter(custom-counter) ".";
+  font-family: var(--font-headings);
+  position: absolute;
+  left: -1.6rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #183153;
 }
 
 /* Update the tag styles to show they're clickable */

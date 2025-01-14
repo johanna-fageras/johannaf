@@ -15,17 +15,15 @@ layout: base
         {% endif %}
         
         <div class="post-meta">
-            <time datetime="{{ page.date.toISOString() }}">{{ page.date | dateFilter }}</time>
-
+            <time datetime="{{ page.date | dateToISO }}">{{ page.date | dateFilter }}</time>
             {% if tags %}
             <div class="post-tags">
                 {% for tag in tags %}
                     {% if tag != "post" %}
-                        <a href="/tags/{{ tag | slug }}/" class="tag">{{ tag }}</a>
+                    <a href="/tags/{{ tag | slug }}/" class="tag">{{ tag }}</a>
                     {% endif %}
                 {% endfor %}
             </div>
-
             {% endif %}
             {% if readingTime %}
             <span class="reading-time">{{ readingTime }} min read</span>
@@ -49,9 +47,9 @@ layout: base
         <div class="author">
             <img src="/assets/images/profile-2.png" alt="Author" class="author-image">
             <div class="author-bio">
-    <span class="author-name">Written by Johanna Fagerås</span>
-    <p class="author-description">Registered nurse by profession, web developer and programmer by passion. When not crafting type or designing icons, I'm tending to my plants and spoiling my cats. Based in Stockholm. Let's connect at <a href="mailto:johanna.fageras@gmail.com">johanna.fageras@gmail.com</a> or call me at <a href="tel:+46760656942">076-065 69 42</a>.</p>
-</div>
+                <span class="author-name">Written by {{ site.name }}</span>
+                <p class="author-description">{{ site.shortBio }}</p>
+            </div>
         </div>
     </footer>
 </article>
