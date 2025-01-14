@@ -1,0 +1,66 @@
+media:
+  input: src/assets/images
+  output: /assets/images
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: 'src/posts'
+    view:
+      fields: [ title, subtitle, excerpt, date, tags, featuredImage, lead ]
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: subtitle
+        label: Subtitle
+        type: string
+      - name: excerpt
+        label: Excerpt
+        type: text
+      - name: date
+        label: Created
+        type: date
+        options:
+          format: yyyy-MM-dd
+          time: true
+      - name: tags
+        label: Tags
+        type: select
+      - name: featuredImage
+        label: Featured Image
+        type: image
+        options:
+          path: src/assets/images/featured
+          extensions: [ jpg, jpeg, png ]
+      - name: lead
+        label: Lead
+        type: text
+  - name: site
+    label: Site Settings
+    path: src/_data/site.json
+    type: file
+    fields:
+      - name: blogName
+        label: Website
+        type: string
+      - name: name
+        label: Author
+        type: string
+      - name: email
+        label: Email
+        type: string
+      - name: phone
+        label: Phone
+        type: string
+      - name: location
+        label: Location
+        type: string
+      - name: occupation
+        label: Occupation
+        type: string
+      - name: shortBio
+        label: Bio
+        type: text
+        
+        
