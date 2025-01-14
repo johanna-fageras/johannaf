@@ -15,7 +15,7 @@ content:
       - name: subtitle
         label: Subtitle
         type: string
-      - name: excerpt
+      - name: description
         label: Excerpt
         type: text
       - name: date
