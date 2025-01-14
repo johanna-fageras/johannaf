@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | {{ site.blogName }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Inclusive+Sans:ital@0;1&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://iconscdn.lon1.cdn.digitaloceanspaces.com/iconfonts/css/fontawesome.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="nav-brand">{{ site.blogName }}</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/archive">Archive</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        {{ content | safe }}
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/archive">Archive</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="copyright">
+   Copyright © {{ currentYear }} {{ site.copyrightName }} | All rights reserved.
+</div>
+        </div>
+    </footer>
+</body>
+</html>

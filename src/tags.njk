@@ -1,0 +1,29 @@
+---
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag | slug }}/
+layout: base
+eleventyComputed:
+  title: Posts tagged "{{ tag }}"
+---
+
+<div class="tag-page">
+    <header class="tag-header">
+        <h1>#{{ tag }}</h1>
+    </header>
+
+    <div class="tagged-posts">
+    <ol class="posts-list">
+    {%- for post in collections[tag] | reverse -%}
+        <li class="post-item">
+            <div class="post-meta">
+                <span class="post-date">{{ post.date | dateFilter }}</span>
+            </div>
+            <a href="{{ post.url }}" class="post-title">{{ post.data.title }}</a>
+        </li>
+    {%- endfor -%}
+    </ol>
+</div>
+</div>

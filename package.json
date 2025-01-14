@@ -1,0 +1,19 @@
+{
+  "name": "johanna-fageras",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Johanna Fagerås",
+  "license": "MIT",
+  "description": "My personal blog and website",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "sass": "^1.83.1"
+  }
+}

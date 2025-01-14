@@ -1,0 +1,41 @@
+---
+layout: base
+title: Archive
+---
+
+<div class="archive-header">
+    <h1>Post Archive</h1>
+    <p>Welcome to the archive — a collection of everything I’ve shared on the blog so far. From random musings to dopey thoughts and everything in between, this is where you can explore past posts and rediscover the moments that make life fun, weird, and memorable. Happy browsing!</p>
+</div>
+
+<section class="archive-posts">
+    <ol class="posts-list full-archive">
+        {%- for post in collections.posts -%}
+        <li class="post-item">
+            <article class="archive-post-card">
+                <div class="post-meta">
+                    <time class="post-date" datetime="{{ post.date | dateToISO }}">
+                        {{ post.date | dateFilter }}
+                    </time>
+                    {% if post.data.tags %}
+                    <div class="post-tags">
+                        {% for tag in post.data.tags %}
+                            {% if tag != "post" %}
+                            <a href="/tags/{{ tag | slug }}/" class="tag">{{ tag }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                <h2 class="post-title">
+                    <span class="post-number">{{ (collections.posts.length - loop.index0) | padNumber }}</span>
+                    <a href="{{ post.url }}">{{ post.data.title }}</a>
+                </h2>
+                {% if post.data.description %}
+                <p class="post-description">{{ post.data.description }}</p>
+                {% endif %}
+            </article>
+        </li>
+        {%- endfor -%}
+    </ol>
+</section>

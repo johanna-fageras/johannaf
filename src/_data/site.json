@@ -1,0 +1,27 @@
+{
+  "name": "Johanna Fagerås",
+  "blogName": "Johanna F.",
+  "email": "johannaelisabethfageras@pm.me",
+  "phone": "+46 76 065 69 42",
+  "location": "Gothenburg, Sweden",
+  "occupation": "Registered Nurse",
+  "hobbies": [
+    "Web Development",
+    "Programming",
+    "Icon Design",
+    "Typeface Design",
+    "Blogging",
+    "House Plants",
+    "Sewing"
+  ],
+  "shortBio": "I'm Johanna, a 35 y/o RN by day and coder, blogger, typographer and icon artist by night. Cat lover, plant parent, crochet enthusiast, horse whisperer, and DIY fashionista extraordinaire always.",
+  "social": {
+    "github": "https://github.com/johanna-fageras",
+    "facebook": "https://www.facebook.com/johfa9578",
+    "twitter": "https://x.com/Johanna66786519",
+    "tiktok": "https://www.tiktok.com/@johannafageras"
+  },
+  "url": "https://johanna-fageras.github.io",
+  "description": "A personal blog about anything and everything.",
+  "copyrightName": "Johanna Fagerås"
+}

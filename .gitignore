@@ -1,0 +1,48 @@
+# Eleventy output directory
+_site/
+
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Cache directories
+.cache/
+.netlify/
+
+# Local development files
+*.local
+
+# Temporary files
+tmp/
+temp/
+
+# Build files
+dist/
+build/
+
+# Optional: package manager lock files (uncomment if you want to ignore)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

@@ -1,0 +1,27 @@
+---
+layout: base
+title: Home
+---
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>Welcome to My Blog</h1>
+        <p>This is my little corner of the internet, where I share thoughts on just about anything that crosses my mind. From random observations about life to the occasional dopey humor that keeps things light, my blog is a mix of quirky musings, honest reflections, and the stuff you didn’t know you needed to think about. It’s a place to laugh, connect, and embrace the wonderfully unpredictable moments of life.</p>
+    </div>
+    <div class="hero-image">
+        <img src="/assets/images/home-1.png" alt="Profile picture" class="profile-image">
+    </div>
+</div>
+
+<section class="latest-posts">
+    <h2>Latest Posts</h2>
+    <ol class="posts-list">
+        {% set postslist = collections.posts %}
+        {% for post in postslist.slice(0,5) %}
+        <li class="post-item">
+            <span class="post-date">{{ post.date | dateFilter }}</span>
+            <a href="{{ post.url }}" class="post-title">{{ post.data.title }}</a>
+        </li>
+        {% endfor %}
+    </ol>
+</section>

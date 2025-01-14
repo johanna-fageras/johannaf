@@ -1,0 +1,85 @@
+---
+layout: base
+title: Contact
+---
+
+<div class="contact-container">
+    <header class="contact-header">
+        <h1>Get in Touch</h1>
+        <p class="contact-intro">Have a question or want to work together? Send me a message!</p>
+    </header>
+
+    <div class="contact-content">
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" action="https://formspree.io/f/xnnnwrdq">
+            <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9+\-\s()]*">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-globe"></i>
+                <a href="{{ site.url }}" target="_blank">{{ site.url }}</a>
+            </div>
+
+            <div class="social-links">
+                {% if site.social.github %}
+                <a href="{{ site.social.github }}" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                {% endif %}
+                
+                {% if site.social.facebook %}
+                <a href="{{ site.social.facebook }}" target="_blank" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                {% endif %}
+
+                {% if site.social.twitter %}
+                <a href="{{ site.social.twitter }}" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                {% endif %}
+
+                {% if site.social.tiktok %}
+                <a href="{{ site.social.tiktok }}" target="_blank" class="social-link">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
