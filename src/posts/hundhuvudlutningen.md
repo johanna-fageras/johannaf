@@ -4,7 +4,7 @@ title: Varför lutar hundar på huvudet? En närmare titt på deras beteende
 subtitle: En inblick i ett av hundarnas mest älskade beteenden
 description: Varför lutar hundar på huvudet när vi pratar med dem? Är det nyfikenhet, försök att förstå oss, eller kanske bara för att de vet att vi tycker det är gulligt? I det här inlägget dyker vi ner i detta charmiga beteende och vad forskningen säger om det.
 date: 2024-01-03
-tags: ["Husdjur", "Djur", "Kommunikation", "Psykologi"]
+tags: [Husdjur, Djur, Kommunikation, Psykologi]
 featuredImage: /assets/images/featured/hundhuvudlutningen.jpeg
 lead: Hundar som lutar huvudet åt sidan är något som får de flesta hundägare att smälta. Det är nästan som om de försöker bättre förstå vad vi säger – eller kanske bara ge oss sitt gulligaste leende. Men har du någonsin undrat varför hundar faktiskt gör detta? Är det en instinkt, en inlärd beteendereaktion eller något annat? I den här artikeln gräver vi djupare för att förstå vad som ligger bakom hundens huvudlutande beteende. Vi kommer att undersöka hur detta kan vara kopplat till kommunikation, hundens anatomi och även deras nyfikenhet.
 ---
