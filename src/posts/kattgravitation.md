@@ -4,7 +4,7 @@ title: Katternas Förhållande till Gravitation - När och Varför Den Plötslig
 subtitle: Varför är fysikens lagar är bara en rekommendation för din katt?
 description: Har du någonsin undrat hur katter verkar trotsa gravitationens lagar? Från eleganta hopp till omöjliga landningar är deras fysik nästan som magi. I detta inlägg utforskar vi kattens unika relation till tyngdlagen och varför de ibland verkar ignorera den helt.
 date: 2024-01-05
-tags: ["husdjur", "katter", "fysik", "natur"]
+tags: ["Husdjur", "Djur", "Vetenskap", "Mysterier"]
 featuredImage: /assets/images/featured/kattgravitation.jpeg
 lead: Katter har alltid fascinerat oss med sina listiga rörelser, förmågan att vrida sig i luften och deras nästan övernaturliga sätt att alltid landa på tassarna. Men vad ligger egentligen bakom deras till synes gravitationsutmanande prestationer? För både kattälskare och fysikentusiaster erbjuder detta ämne fascinerande insikter om djurens beteende och de fysiska lagarna som styr vår värld. I det här inlägget tittar vi närmare på katternas unika förhållande till gravitation, både ur ett vetenskapligt och praktiskt perspektiv, och hur detta påverkar både våra kattvänner och vår förståelse av fysik.
 ---

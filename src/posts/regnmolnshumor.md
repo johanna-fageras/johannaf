@@ -4,7 +4,7 @@ title: Varför regnmolnen väntar tills ditt hår är perfekt
 subtitle: Sambandet mellan perfekt hår och oväntade skyfall
 description: Har du någonsin märkt att regnet alltid verkar komma precis efter att du fixat håret? Är det bara dålig tajming, eller har regnmolnen en egen humor? I detta inlägg utforskar vi den frustrerande (och lite komiska) kopplingen mellan perfekt styling och oväntade skyfall.
 date: 2024-01-04
-tags: ["skönhet", "natur", "väder", "mysterier"]
+tags: ["Skönhet", "Väder", "Natur", "Vetenskap", "Forskning"]
 featuredImage: /assets/images/featured/regnmolnshumor.jpeg
 lead: Få saker är lika frustrerande som att noggrant styla ditt hår bara för att se det förstöras av regn eller fukt. Det verkar nästan som om regnmolnen väntar på det ögonblick du lämnar hemmet efter att ha fixat ditt hår till perfektion. Men varför är det så svårt att få håret att hålla sig snyggt i väder som inte samarbetar? Och vad kan vi göra åt det? Den här artikeln dyker ner i vetenskapen bakom regniga hårkatastrofer och erbjuder lösningar som kan hjälpa dig att vinna kampen mot naturens krafter.
 ---
