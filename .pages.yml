@@ -38,6 +38,13 @@ content:
       - name: lead
         label: Lead
         type: text
+      - name: body
+        label: Body
+        type: rich-text
+        options:
+          image: 
+            path: src/assets/images/uploads
+            extensions: [ jpg, jpeg, png ]
   - name: site
     label: Site Settings
     path: src/_data/site.json
