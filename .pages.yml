@@ -15,7 +15,7 @@ content:
       - name: subtitle
         label: Subtitle
         type: string
-      - name: excerpt
+      - name: description
         label: Excerpt
         type: text
       - name: date
@@ -27,6 +27,8 @@ content:
       - name: tags
         label: Tags
         type: select
+        options:
+          values: [ Arbetsliv, DIY, Djur, Filosofi, Forskning, Funderingar, Hem, Historia, Humor, Husdjur, Hälsa, Inredning, Kommunikation, Konspirationer, Kultur, Kuriositeter, Livsstil, Läkemedel, Mat & Dryck, Mode, Mysterier, Natur, Nyheter, Odling, Politik, Psykologi, Recept, Reflektioner, Relationer, Religion, Resor, Sjukvård, Skönhet, Sport, Teknik, Tips & Tricks, Utbildning, Vetenskap, Väder, Växter, Övrigt ]
       - name: featuredImage
         label: Featured Image
         type: image
@@ -44,6 +46,9 @@ content:
       - name: blogName
         label: Website
         type: string
+      - name: description
+        label: Description
+        type: text
       - name: name
         label: Author
         type: string
@@ -62,5 +67,27 @@ content:
       - name: shortBio
         label: Bio
         type: text
+      - name: url
+        label: URL
+        type: string
+      - name: social
+        label: Social Links
+        type: object
+        fields:
+          - name: github
+            label: GitHub
+            type: string
+          - name: facebook
+            label: Facebook
+            type: string
+          - name: twitter
+            label: Twitter
+            type: string
+          - name: tiktok
+            label: TikTok
+            type: string
+      - name: copyrightName
+        label: Copyright
+        type: string
         
         
