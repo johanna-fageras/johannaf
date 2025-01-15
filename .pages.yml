@@ -7,7 +7,7 @@ content:
     type: collection
     path: 'src/posts'
     view:
-      fields: [ title, subtitle, excerpt, date, tags, featuredImage, lead ]
+      fields: [ title, date, tags, featuredImage ]
     fields:
       - name: title
         label: Title
