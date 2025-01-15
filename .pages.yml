@@ -30,7 +30,7 @@ content:
         options:
           values: [ Arbetsliv, DIY, Djur, Filosofi, Forskning, Funderingar, Hem, Historia, Humor, Husdjur, Hälsa, Inredning, Kommunikation, Konspirationer, Kultur, Kuriositeter, Livsstil, Läkemedel, Mat & Dryck, Mode, Mysterier, Natur, Nyheter, Odling, Politik, Psykologi, Recept, Reflektioner, Relationer, Religion, Resor, Sjukvård, Skönhet, Sport, Teknik, Tips & Tricks, Utbildning, Vetenskap, Väder, Växter, Övrigt ]
       - name: featuredImage
-        label: Featured Image
+        label: Image
         type: image
         options:
           path: src/assets/images/featured
