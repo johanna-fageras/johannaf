@@ -7,7 +7,7 @@ content:
     type: collection
     path: 'src/posts'
     view:
-      fields: [ title, subtitle, excerpt, date, tags, featuredImage, lead ]
+      fields: [ featuredImage, title, date, tags ]
     fields:
       - name: title
         label: Title
@@ -30,7 +30,7 @@ content:
         options:
           values: [ Arbetsliv, DIY, Djur, Filosofi, Forskning, Funderingar, Hem, Historia, Humor, Husdjur, Hälsa, Inredning, Kommunikation, Konspirationer, Kultur, Kuriositeter, Livsstil, Läkemedel, Mat & Dryck, Mode, Mysterier, Natur, Nyheter, Odling, Politik, Psykologi, Recept, Reflektioner, Relationer, Religion, Resor, Sjukvård, Skönhet, Sport, Teknik, Tips & Tricks, Utbildning, Vetenskap, Väder, Växter, Övrigt ]
       - name: featuredImage
-        label: Featured Image
+        label: Image
         type: image
         options:
           path: src/assets/images/featured
@@ -38,6 +38,13 @@ content:
       - name: lead
         label: Lead
         type: text
+      - name: body
+        label: Body
+        type: rich-text
+        options:
+          image: 
+            path: src/assets/images/uploads
+            extensions: [ jpg, jpeg, png ]
   - name: site
     label: Site Settings
     path: src/_data/site.json
